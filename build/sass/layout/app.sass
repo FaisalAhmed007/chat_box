@@ -1,0 +1,186 @@
+// chat box style sheet 
+.wrapper 
+  position: relative
+  background-color: #4f566f
+  color: #9ea4b9
+  padding: 50px 0
+  height: 100vh
+  overflow: hidden
+.container
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  max-width: 970px
+  width: 100% 
+  margin: 0 auto 
+  padding: 0 30px
+  overflow: hidden
+  &::before
+    display: table;
+    content: " "
+.chat
+  max-width: 350px
+  width: 100% 
+  margin: 20px auto 
+  background-color: #ffffff 
+  border: 1px solid transparent 
+  border-radius: 4px 
+  box-shadow: 0 1px 1px rgba($black, .05)
+  &__header
+    position: relative
+    background-color: #cfdadd 
+    color: #5a5a5a 
+    padding: 10px 15px 
+    border: 1px solid transparent 
+    border-top-left-radius: 3px 
+    border-top-right-radius: 3px
+    .header 
+      position: relative
+      height: 30px
+      &__avatar,
+      &__label,
+      &__close
+        display: inline-block 
+      &__avatar 
+        text-decoration: none 
+        width: 34px 
+        height: 34px 
+        border: 1px solid transparent
+        border-radius: 50px 
+        background-color: #dddddd
+        float: left
+        margin-right: 15px
+        overflow: hidden
+      &__label 
+        font-size: 18px 
+        line-height: 1.6
+        padding-right: 5px
+        width: 200px 
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        float: left
+      &__close 
+        +button
+        width: 28px 
+        height: 28px
+        border-radius: 50px
+        float: right 
+        margin-top: 1px
+        &:hover 
+          background-color: rgba($black, 0.1)
+  &__main
+    padding: 15px 
+    overflow-x: scroll
+    height: 400px
+    .main 
+      position: relative
+      overflow: visible
+      zoom: 1
+      &:not(first-child)
+        padding-top: 15px
+      &__left,
+      &__body,
+      &__right 
+        display: inline-block
+      &__left 
+        padding-right: 10px
+        display: table-cell 
+        vertical-align: top
+        float: left
+      &__avatar 
+        position: relative 
+        width: 40px 
+        height: 40px
+        border: 1px solid transparent
+        display: inline-block
+        border-radius: 50px
+        overflow: hidden
+        text-decoration: none 
+        cursor: pointer
+      &__body 
+        width: 10000px 
+        height: 50px
+        overflow: visible
+        display: table-cell 
+        vertical-align: top
+        zoom: 1
+      &__wrapper  
+        position: relative
+        border: 1px solid $gray
+        border-radius: 25px
+        padding: 15px
+        margin-bottom: 5px
+        color: $black
+        &--primary
+          background-color: #7266ba
+          color: #f4f3f9
+          padding-right: 10px
+      &__arrow 
+        display: block 
+        width: 0 
+        height: 0 
+        border: 9px solid transparent 
+        z-index: 10
+        position: absolute 
+        top: 19px
+        left: -9px
+      p 
+        margin: 0 0 10px
+      &__copy 
+        font-size: 15px 
+        line-height: 1.33
+        margin: 0 0 10px
+      &__text-muted
+        color: #777 
+        font-size: 14px 
+      &__right
+        padding-left: 10px
+        display: table-cell 
+        vertical-align: top
+  &__footer
+    position: relative 
+    border-top: 1px solid #ddd 
+    background-color: #dee5e7
+    color: #5a6971
+    padding: 10px 15px
+    border-bottom-right-radius: 3px 
+    border-bottom-left-radius: 3px
+    .footer 
+      position: relative
+      height: 35px
+      &__form 
+        height: 35px 
+      &__inpurGroup 
+        position: relative
+        display: inline-block
+      &__input 
+        width: 100% 
+        font-size: 14px 
+        line-height: 1.42
+        height: 35px
+        padding: 3px 75px 3px 10px
+        display: inline-block
+        float: left
+        border-radius: 2px
+        border: 1px solid transparent
+        &:focus 
+          outline: none 
+      &__button 
+        +button 
+        height: 35px
+        font-size: 14px 
+        line-height: 1.42
+        float: right
+        margin-top: -35px
+        border: 1px solid #ddd
+        padding: 3px 12px
+        color: #000000
+        &:hover 
+          background-color: rgba($gray, 0.3)
+
+
+
+    
+
